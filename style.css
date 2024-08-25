@@ -152,3 +152,125 @@ footer, .logo-container, .experience, .cta, .portfolio-skills, .btn-bg {
 .btn, .btn-2, .btn-bg, .wrapper, .project-wrapper{
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+.dowload-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme-btn, .dowload-btn:hover, .contact-btn:hover, .btn-2:hover, .wrapper img:hover {
+    cursor: pointer;
+}
+
+.btn:hover, 
+.btn-2:hover, 
+.project-wrapper:hover, 
+.logo-container:hover {
+    transform: scale(0.98);
+}
+
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.logo-container:active{
+    transform: scale(1);
+}
+
+.contact-btn:hover,
+.download-btn{
+    background-color: var(--btn-bg-color);
+    color: white;
+}
+
+.contact-btn:hover{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover, .active-btn {
+    background-color: white;
+}
+
+.btn,
+.btn-2 {
+    height: 3rem;
+}
+
+.btn {
+    width: 9rem;
+    
+}
+
+.btn-2{
+    width: 8.5rem;
+}
+
+.dowload-btn{
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-skills{
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.btn-bg,
+.wrapper{
+    width: 20rem;
+}
+
+article p,
+.btn-bg{
+    background-color: var(--btn-bg-light);
+}
+
+.hero,
+.portfolio,
+.skills {
+    margin-top: 2rem;
+}
+
+.skills {
+    display: none;
+}
+
+.wrapperimg {
+    border-radius: 1rem;
+}
+article, .wrapper h3{
+    margin-bottom: 1.5rem;
+}
+
+article {
+    flex-wrap: wrap;
+}
+article p {
+    border-radius: 0.5rem;
+    flex-grow: 20;
+    padding: 1rem;
+}
+
+footer {
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 900px) {
+    .skills,
+    .portfolio {
+        flex-direction: row;
+        width: 45rem;
+    }
+    .skills {
+        margin:  2rem auto 0;
+        justify-content: center;
+    }
+    .portfolio{
+        margin: 2rem auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .wrapper {
+        width: calc(48%);
+        flex: none;
+    }
+}
+
